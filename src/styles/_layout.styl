@@ -1,0 +1,77 @@
+//
+// レイアウト
+// 全体の位置とかを定義しています
+//
+html, body {
+  * {
+    box-sizing border-box;
+  }
+}
+
+// セクション
+// コンテンツ内容の区切り
+.section {
+  width: 100%;
+  padding: 30px 0;
+}
+
+// コンテナ
+// 位置を良しなに揃えるやつ
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+// カラム
+// 横並びにするやつ(コンテナの中で使える)
+.col20, .col30, .col70, .col100 {
+  float: left;
+  padding: 0 10px;
+}
+.col20 {
+  width: 20%;
+}
+.col30 {
+  width: 30%;
+}
+.col70 {
+  width: 70%;
+}
+.col100 {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .col {
+    float: none;
+  }
+  .col20, .col30, .col70, .col100 {
+    width: 100%;
+  }
+}
+
+// 定義済みリスト
+dl {
+  overflow: hidden;
+  dt, dd {
+    float: left;
+    line-height: 24px;
+    text-align: left;
+  }
+  dt {
+    width: 25%;
+    font-weight: bold;
+  }
+  dd {
+    width: 75%;
+    margin-bottom: 5px;
+  }
+  @media (max-width: 960px) {
+    dt, dd {
+      float: none;
+      width: 100%;
+    }
+  }
+}

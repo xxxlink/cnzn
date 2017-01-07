@@ -1,0 +1,19 @@
+{
+  "name": "canzone",
+  "version": "1.0.0",
+  "description": "canzone static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "stylus -w src/styles/styles.styl -o styles.css"
+  },
+  "dependencies": {
+    "stylus": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxxlink/xxxlink.github.io.git"
+  },
+  "author": "nanocloudx<nanocloudx@gmail.com>",
+  "license": "MIT"
+}
