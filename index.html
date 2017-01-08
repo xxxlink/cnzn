@@ -2,6 +2,10 @@
 <html lang="ja">
 <head>
   <title>Canzone</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="Canzone, 佐々倉, イラスト, 同人誌" />
+  <meta name="description" content="Canzoneは、同人誌制作を行っている、佐々倉の個人サークルです。">
 </head>
 <body>
 
@@ -17,7 +21,7 @@
     <div class="container">
       <h2>プロフィール</h2>
       <div class="col30">
-        <img src="images/illusts/dummy.png" alt="せつめい">
+        <img src="images/profile.png" alt="せつめい">
       </div>
       <div class="col70">
         <dl>
@@ -28,7 +32,7 @@
           <dt>自己紹介</dt>
           <dd>
             <p>趣味やお手伝いで絵を描いています。</p>
-            <p>何かございましたらeko.sakuraあっとまーくgmail.comまで</p>
+            <p>何かございましたら eko.sakura@gmail.com まで</p>
           </dd>
         </dl>
       </div>
@@ -50,11 +54,6 @@
   <div id="illust" class="section">
     <div class="container">
       <h2>イラスト一覧</h2>
-
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル0</p>
-      </div>
 
       <div class="col20 illust">
         <img src="images/illusts/dummy.png" alt="せつめい">
@@ -81,37 +80,38 @@
         <p>タイトル5</p>
       </div>
 
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル6</p>
-      </div>
-
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル7</p>
-      </div>
-
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル8</p>
-      </div>
-
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル9</p>
-      </div>
-
     </div>
   </div>
 
-  <!-- ウォール -->
-  <div id="footer" class="section">
-    <div class="container">
-      <p>たかつきりんく名義はこちら</p>
+  <!-- イベント参加(非表示) -->
+  <div id="event" class="section">
+    <div id="eventNotice" class="container">
+      <p>たかつきりんく名義でのイベント参加情報はこちら</p>
       <p><small>※一部成人描写を含みますのでご注意ください</small></p>
+    </div>
+    <div id="eventBody" class="container hidden">
+      <h2>イベント</h2>
+      <p>たかつきりんく名義でのイベント参加情報です</p>
+      <table>
+        <thead>日付</thead>
+        <thead>イベント名</thead>
+        <thead>カップリング</thead>
+        <thead>備考</thead>
+        <tbody>2017/01/01</tbody>
+        <tbody>ほげほげイベント</tbody>
+        <tbody>ぴよぴよ×ふがふが</tbody>
+        <tbody>B5 20ページ</tbody>
+      </table>
     </div>
   </div>
 
   <link rel="stylesheet" href="styles.css">
+  <script>
+    const eventNotice = document.getElementById('eventNotice');
+    const eventBody = document.getElementById('eventBody');
+    eventNotice.addEventListener('onClick', () => {
+      // WIP
+    })
+  </script>
 </body>
 </html>
