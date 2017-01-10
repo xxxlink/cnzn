@@ -1,25 +1,69 @@
+.hidden {
+  display: none;
+}
 #wall {
   background-image: B_WALL;
   background-size: cover;
-  background-attachment: fixed;
 }
 #profile {
   background-color: C_WHITE;
+  @media (max-width: 960px) {
+    .profile-image {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
 }
 #works {
-  background-image: B_BLACKTILE;
-  color: C_WHITE;
-  ul {
-    li {
+  background-color: C_LIGHT;
+  table {
+    width: 100%;
+    th {
+      font-weight: bold;
+    }
+    th, td {
       text-align: left;
     }
+    .t-date { width: 20%; }
+    .t-description { width: 80%; }
   }
 }
 #illust {
   background-image: B_PAPER;
 }
-#event {
-  .hidden {
-    display: none;
+#notice {
+  .notice {
+    color: C_RED;
   }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+#event {
+  table {
+    width: 100%;
+    th {
+      font-weight: bold;
+    }
+    th, td {
+      text-align: left;
+    }
+    .t-date { width: 20%; }
+    .t-event { width: 30%; }
+    .t-couple { width: 30%; }
+    .t-note { width: 20%; }
+  }
+}
+#footer {
+  p, a {
+    text-align: right;
+    font-size: 12px;
+  }
+  a {
+    color: C_YELLOW;
+  }
+  background-image: B_BLACKTILE;
+  color: C_LIGHT;
 }

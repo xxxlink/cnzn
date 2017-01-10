@@ -8,27 +8,30 @@
   <meta name="description" content="Canzoneは、同人誌制作を行っている、佐々倉の個人サークルです。">
 </head>
 <body>
-
   <!-- ウォール -->
   <div id="wall">
     <div class="container">
       <h1><img class="logo" src="images/logo.png" alt="Canzone"></h1>
     </div>
   </div>
-
   <!-- プロフィール -->
   <div id="profile" class="section">
     <div class="container">
       <h2>プロフィール</h2>
+      <p class="description">こんにちはこんにちは</p>
       <div class="col30">
-        <img src="images/profile.png" alt="せつめい">
+        <img class="profile-image" src="images/profile.png" alt="せつめい">
       </div>
       <div class="col70">
         <dl>
           <dt>名前</dt>
           <dd>佐々倉(ささくら)</dd>
           <dt>趣味</dt>
-          <dd>絵描き</dd>
+          <dd>イラスト</dd>
+          <dt>ほげほげ</dt>
+          <dd>ああああああああああああああああ</dd>
+          <dt>ぴよぴよ</dt>
+          <dd>ああああああああああああああああ</dd>
           <dt>自己紹介</dt>
           <dd>
             <p>趣味やお手伝いで絵を描いています。</p>
@@ -38,79 +41,109 @@
       </div>
     </div>
   </div>
-
   <!-- 制作実績 -->
   <div id="works" class="section">
     <div class="container">
       <h2>制作実績</h2>
-      <ul>
-        <li>2015/04/01 某マスコットキャラ「れいずちゃん＆ぼたん」イラスト</li>
-        <li>2016/12/31 同人情報プラットフォーム「にゃんぱす！」イラスト</li>
-      </ul>
+      <p class="description">いままで制作したもの</p>
+      <table>
+        <thead>
+          <tr><th class="t-date">日付</th><th class="t-description">制作内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="t-date">2015/04/01</td><td class="t-description">某マスコットキャラ「れいずちゃん＆ぼたん」イラスト</td></tr>
+          <tr><td class="t-date">2016/12/31</td><td class="t-description">同人情報プラットフォーム「にゃんぱす！」イラスト</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-
-  <!-- イラスト -->
-  <div id="illust" class="section">
+  <!-- 注意 -->
+  <div id="notice" class="section">
+    <div class="container">
+      <p class="notice">たかつきりんく名義での活動内容はこちら</p>
+      <p><small>※成人向けの項目を含みます</small></p>
+    </div>
+  </div>
+  <!-- イラスト(非表示) -->
+  <div id="illust" class="section hidden">
     <div class="container">
       <h2>イラスト一覧</h2>
-
+      <p class="description">趣味やお手伝いで描いたイラスト</p>
       <div class="col20 illust">
         <img src="images/illusts/dummy.png" alt="せつめい">
         <p>タイトル1</p>
       </div>
-
       <div class="col20 illust">
         <img src="images/illusts/dummy.png" alt="せつめい">
         <p>タイトル2</p>
       </div>
-
       <div class="col20 illust">
         <img src="images/illusts/dummy.png" alt="せつめい">
         <p>タイトル3</p>
       </div>
-
       <div class="col20 illust">
         <img src="images/illusts/dummy.png" alt="せつめい">
         <p>タイトル4</p>
       </div>
-
       <div class="col20 illust">
         <img src="images/illusts/dummy.png" alt="せつめい">
         <p>タイトル5</p>
       </div>
-
     </div>
   </div>
-
   <!-- イベント参加(非表示) -->
-  <div id="event" class="section">
-    <div id="eventNotice" class="container">
-      <p>たかつきりんく名義でのイベント参加情報はこちら</p>
-      <p><small>※一部成人描写を含みますのでご注意ください</small></p>
-    </div>
-    <div id="eventBody" class="container hidden">
-      <h2>イベント</h2>
-      <p>たかつきりんく名義でのイベント参加情報です</p>
+  <div id="event" class="section hidden">
+    <div class="container">
+      <h2>イベント参加情報</h2>
+      <p class="description">たかつきりんく名義でのイベント参加情報</p>
       <table>
-        <thead>日付</thead>
-        <thead>イベント名</thead>
-        <thead>カップリング</thead>
-        <thead>備考</thead>
-        <tbody>2017/01/01</tbody>
-        <tbody>ほげほげイベント</tbody>
-        <tbody>ぴよぴよ×ふがふが</tbody>
-        <tbody>B5 20ページ</tbody>
+        <thead>
+        <tr>
+          <th class="t-date">日付</th>
+          <th class="t-event">イベント名</th>
+          <th class="t-couple">カップリング</th>
+          <th class="t-note">備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="t-date">2017/01/01</td>
+          <td class="t-event">ほげほげイベント</td>
+          <td class="t-couple">ぴよぴよ×ふがふが</td>
+          <td class="t-note">B5 20ページ</td>
+        </tr>
+        <tr>
+          <td class="t-date">2017/01/01</td>
+          <td class="t-event">ほげほげイベント</td>
+          <td class="t-couple">ぴよぴよ×ふがふが</td>
+          <td class="t-note">B5 20ページ</td>
+        </tr>
+        <tr>
+          <td class="t-date">2017/01/01</td>
+          <td class="t-event">ほげほげイベント</td>
+          <td class="t-couple">ぴよぴよ×ふがふが</td>
+          <td class="t-note">B5 20ページ</td>
+        </tr>
+        </tbody>
       </table>
     </div>
   </div>
-
+  <!-- フッター -->
+  <div id="footer" class="section">
+    <div class="container">
+      <p>&copy; 2016 - 2017 Canzone, Built with <a href="http://drossel.io/" target="_blank">drossel</a>.</p>
+      <p><small>サイト内に掲載されているイラスト等の無断転載はご遠慮ください / This website available Japanese language only.</small>
+    </div>
+  </div>
   <link rel="stylesheet" href="styles.css">
   <script>
-    const eventNotice = document.getElementById('eventNotice');
-    const eventBody = document.getElementById('eventBody');
-    eventNotice.addEventListener('onClick', () => {
-      // WIP
+    const notice = document.getElementById('notice');
+    const event = document.getElementById('event');
+    const illust = document.getElementById('illust');
+    notice.addEventListener('click', () => {
+      notice.className = 'hidden';
+      event.className = 'section';
+      illust.className = 'section';
     })
   </script>
 </body>
