@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "styles": "stylus -w src/styles/styles.styl -o styles.css"
+    "styles": "stylus -w -c src/styles/styles.styl -o styles.css"
   },
   "dependencies": {
     "stylus": "*"
