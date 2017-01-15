@@ -20,7 +20,7 @@
       <h2>プロフィール</h2>
       <p class="description">こんにちはこんにちは</p>
       <div class="col30">
-        <img class="profile-image" src="images/profile.png" alt="せつめい">
+        <img class="profile-image" src="images/profile_sasakura.png" alt="せつめい">
       </div>
       <div class="col70">
         <dl>
@@ -41,6 +41,17 @@
       </div>
     </div>
   </div>
+  <!-- イラスト -->
+  <div id="illust" class="section">
+    <div class="container">
+      <h2>イラスト一覧</h2>
+      <p class="description">趣味やお手伝いで描いたイラスト</p>
+      <div class="col20 illust">
+        <img src="images/illusts/sasakura/tsugumi.png" alt="つぐみちゃん">
+        <p>つぐみちゃん</p>
+      </div>
+    </div>
+  </div>
   <!-- 制作実績 -->
   <div id="works" class="section">
     <div class="container">
@@ -57,95 +68,22 @@
       </table>
     </div>
   </div>
-  <!-- 注意 -->
+  <!-- リンク -->
   <div id="notice" class="section">
+    <a href="main.html" class="link"></a>
     <div class="container">
       <p class="notice">たかつきりんく名義での活動内容はこちら</p>
       <p><small>※一部成人向けの項目を含みます</small></p>
     </div>
   </div>
-  <!-- イラスト(非表示) -->
-  <div id="illust" class="section hidden">
-    <div class="container">
-      <h2>イラスト一覧</h2>
-      <p class="description">趣味やお手伝いで描いたイラスト</p>
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル1</p>
-      </div>
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル2</p>
-      </div>
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル3</p>
-      </div>
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル4</p>
-      </div>
-      <div class="col20 illust">
-        <img src="images/illusts/dummy.png" alt="せつめい">
-        <p>タイトル5</p>
-      </div>
-    </div>
-  </div>
-  <!-- イベント参加(非表示) -->
-  <div id="event" class="section hidden">
-    <div class="container">
-      <h2>イベント参加情報</h2>
-      <p class="description">たかつきりんく名義でのイベント参加情報</p>
-      <table>
-        <thead>
-        <tr>
-          <th class="t-date">日付</th>
-          <th class="t-event">イベント名</th>
-          <th class="t-couple">カップリング</th>
-          <th class="t-note">備考</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="t-date">2017/01/01</td>
-          <td class="t-event">ほげほげイベント</td>
-          <td class="t-couple">ぴよぴよ×ふがふが</td>
-          <td class="t-note">B5 20ページ</td>
-        </tr>
-        <tr>
-          <td class="t-date">2017/01/01</td>
-          <td class="t-event">ほげほげイベント</td>
-          <td class="t-couple">ぴよぴよ×ふがふが</td>
-          <td class="t-note">B5 20ページ</td>
-        </tr>
-        <tr>
-          <td class="t-date">2017/01/01</td>
-          <td class="t-event">ほげほげイベント</td>
-          <td class="t-couple">ぴよぴよ×ふがふが</td>
-          <td class="t-note">B5 20ページ</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
   <!-- フッター -->
   <div id="footer" class="section">
     <div class="container">
-      <p>&copy; 2016 - 2017 Canzone, Built with <a href="http://drossel.io/" target="_blank">drossel</a>.</p>
+      <p>&copy; 2014 - 2017 Canzone, Built with <a href="http://drossel.io/" target="_blank">drossel</a>.</p>
       <p><small>サイト内に掲載されているイラスト等の無断転載はご遠慮ください / Unauthorized reproduction is prohibited.</small>
     </div>
   </div>
-  <!-- CSS/JavaScript -->
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-  <script>
-    const notice = document.getElementById('notice');
-    const event = document.getElementById('event');
-    const illust = document.getElementById('illust');
-    notice.addEventListener('click', () => {
-      notice.className = 'hidden';
-      event.className = 'section';
-      illust.className = 'section';
-    })
-  </script>
 </body>
 </html>

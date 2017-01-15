@@ -1,6 +1,3 @@
-.hidden {
-  display: none;
-}
 #wall {
   background-image: B_WALL;
   background-size: cover;
@@ -31,6 +28,12 @@
 }
 #illust {
   background-image: B_PAPER;
+  .illust {
+    height: 270px;
+    @media (max-width: 960px) {
+      height: auto;
+    }
+  }
 }
 #notice {
   .notice {
@@ -42,18 +45,28 @@
   }
 }
 #event {
+  background-color: C_LIGHT;
   table {
-    width: 100%;
-    th {
-      font-weight: bold;
-    }
-    th, td {
-      text-align: left;
-    }
-    .t-date { width: 20%; }
-    .t-event { width: 30%; }
-    .t-couple { width: 30%; }
-    .t-note { width: 20%; }
+    .t-date { width: 25%; }
+    .t-event { width: 40%; }
+    .t-description { width: 35%; }
+  }
+}
+#dist {
+  table {
+    .t-title { width: 33%; }
+    .t-genre { width: 15%; }
+    .t-couple { width: 17%; }
+    .t-date { width: 13%; }
+    .t-size { width: 10%; }
+    .t-pages { width: 12%; }
+  }
+}
+#contribute {
+  background-color: C_LIGHT;
+  table {
+    .t-title { width: 40%; }
+    .t-description { width: 60%; }
   }
 }
 #footer {
